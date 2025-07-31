@@ -1,0 +1,15 @@
+ 
+# .gitignore
+
+# Python-related
+*.pyc
+__pycache__/
+*.sqlite3
+
+# Virtual environment
+env/
+ENV/
+venv/
+
+# IDE files
+.idea/
