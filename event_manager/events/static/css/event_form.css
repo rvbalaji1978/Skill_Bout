@@ -1,0 +1,91 @@
+/* Form Container */
+.container {
+  background: #ffffff;
+  border: 1px solid #e4e4e7;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.6rem;
+  color: #5c4a57; /* Deep muted plum */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Label Styling */
+.form-label {
+  font-weight: 600;
+  color: #6d5e6b; /* Soft gray-purple */
+}
+
+/* Input and Textarea */
+input.form-control,
+textarea.form-control,
+select.form-select {
+  border: 1px solid #dad5da;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: #fefbfc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus,
+textarea.form-control:focus,
+select.form-select:focus {
+  border-color: #e28aa1; /* Soft rose pink */
+  box-shadow: 0 0 6px rgba(226, 138, 161, 0.3);
+  background-color: #fff;
+}
+
+/* Checkbox and Radios */
+.form-check-label {
+  font-size: 0.95rem;
+  color: #61525d;
+}
+
+.form-check-input:checked {
+  background-color: #e28aa1;
+  border-color: #e28aa1;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #e28aa1; /* Blush pink */
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #d06e8b; /* Deeper pink */
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  color: #a39ca3;
+  margin-top: 40px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+}

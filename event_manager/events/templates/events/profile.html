@@ -1,0 +1,25 @@
+{% extends "events/base.html" %}
+
+{% block content %}
+<!-- Include Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Profile Card -->
+<div class="container mt-4" style="font-family: 'Poppins', sans-serif;">
+  <div class="card shadow-sm p-4" style="border: 1px solid #ddd; background-color: #fafafa; border-radius: 10px;">
+    <h2 class="mb-3" style="color: #2a2a2a;">Welcome, {{ user.first_name|default:user.username }}!</h2>
+    <hr style="border-top: 1px solid #ccc;">
+
+    <h4 style="color: #444;">Profile Details</h4>
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+
+    {% if user.first_name or user.last_name %}
+      <p><strong>Full Name:</strong> {{ user.first_name }} {{ user.last_name }}</p>
+    {% endif %}
+
+    <a href="/logout" class="btn btn-outline-danger mt-3">Logout</a>
+
+  </div>
+</div>
+{% endblock %}
