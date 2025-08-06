@@ -48,29 +48,26 @@ event_management/
 
 ### 1. Clone the Repository
 
-git clone <repo-url>  
-cd event-management-system
+- git clone <repo-url>  
+- cd event-management-system
 
 ### 2. Create and Activate a Virtual Environment
 
-python -m venv venv  
-source venv/bin/activate  (On Windows: venv\Scripts\activate)
+- python -m venv venv  
+- source venv/bin/activate  (On Windows: venv\Scripts\activate)
 
 ### 3. Install Dependencies
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ### 4. Apply Database Migrations
 
-python manage.py migrate
+- python manage.py migrate
 
 ### 5. Run the Development Server
 
-python manage.py runserver
+- python manage.py runserver
 
-### 6. Open in Browser
-
-Visit: http://127.0.0.1:8000/
 
 ## Deployment
 
