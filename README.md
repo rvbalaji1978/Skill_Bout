@@ -1,62 +1,87 @@
-# **Event Management System**
+# Event Management System
 
-**Overview**
+## Team Details
+
+- Team Size: 2  
+- Developer: Venkata Balaji Sai R
+- Designer:  Arjun Dev B
+
+## Project Overview
 
 The Event Management System is a beginner-friendly Django web application that allows users to create, manage, and participate in events. It demonstrates core Django concepts and provides hands-on experience for new developers who are learning Django and full-stack web development.
 
-**Features**
+## Features
 
-- User registration and authentication
+### User
+- Register and log in
+- Create, edit, and delete events
+- Browse and search events
+- Register for events
+- View registered events
 
-- Event creation, editing, and deletion
+## Tech Stack
 
-- Event browsing and search functionality
+### Backend
+- Django 4.2  
+- Python 3.9+  
+- SQLite
 
-- Event registration and user dashboard
+### Frontend
+- HTML  
+- CSS  
+- JavaScript  
 
-**Technologies Used**
+## Folder Structure
 
-- Django 4.2
+event_management/
+├── event_management/         
+├── events/                   
+│   ├── models.py            
+│   ├── views.py            
+│   ├── urls.py              
+│   ├── forms.py              
+│   └── templates/           
+├── manage.py              
+       
 
-- Python 3.9+
+## Setup & Installation
 
-- HTML/CSS
+### 1. Clone the Repository
 
-- JavaScript
+git clone <repo-url>  
+cd event-management-system
 
-- SQLite 
+### 2. Create and Activate a Virtual Environment
 
-  
+python -m venv venv  
+source venv/bin/activate  (On Windows: venv\Scripts\activate)
 
-**Setup Instructions**
+### 3. Install Dependencies
 
-**Clone the repository:**
+pip install -r requirements.txt
 
-- git clone <repo-url>
+### 4. Apply Database Migrations
 
-**Navigate into the project directory:**
+python manage.py migrate
 
-- cd event-management-system
+### 5. Run the Development Server
 
-**Create and activate a virtual environment:**
+python manage.py runserver
 
-- python -m venv venv
-- source env/bin/activate (Windows: env\Scripts\activate)
+### 6. Open in Browser
 
-**Install required dependencies:**
+Visit: http://127.0.0.1:8000/
 
-- pip install -r requirements.txt
+## Deployment
 
-**Apply database migrations:**
+This project can be deployed to platforms like Render or PythonAnywhere for backend and static file hosting.
 
-- python manage.py migrate
+## Acknowledgements
 
-**Start the development server:**
+This project is part of an individual learning journey to understand Django and web development using the Python stack.
 
-- python manage.py runserver
+## Author
 
-**Visit the local server in your browser:**
-
-- http://127.0.0.1:8000/
-
-
+**Venkata Balaji Sai R** 
+Django Developer  
+[LinkedIn](https://www.linkedin.com/in/rv-balaji-sai) | [GitHub](https://github.com/rvbalaji1978)
