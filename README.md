@@ -25,43 +25,37 @@ JavaScript
 
 SQLite 
 
-**Project Structure**
-
-graphql
-Copy
-Edit
-event_management/
-├── event_management/      
-├── events/                 
-│   ├── models.py           
-│   ├── views.py           
-│   ├── urls.py            
-│   ├── forms.py            
-│   └── templates/           
-├── manage.py  
+  
 
 **Setup Instructions**
 
 **Clone the repository:**
+
 git clone <repo-url>
 
 **Navigate into the project directory:**
+
 cd event-management-system
 
 **Create and activate a virtual environment:**
+
 python -m venv venv
 source env/bin/activate (Windows: env\Scripts\activate)
 
 **Install required dependencies:**
+
 pip install -r requirements.txt
 
 **Apply database migrations:**
+
 python manage.py migrate
 
 **Start the development server:**
+
 python manage.py runserver
 
 **Visit the local server in your browser:**
+
 http://127.0.0.1:8000/
 
 
