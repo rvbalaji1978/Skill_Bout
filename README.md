@@ -45,24 +45,23 @@ event_management/
 **Clone the repository:**
 git clone <repo-url>
 
-Navigate into the project directory:
+**Navigate into the project directory:**
 cd event-management-system
 
-Create and activate a virtual environment:
+**Create and activate a virtual environment:**
 python -m venv venv
 source env/bin/activate (Windows: env\Scripts\activate)
 
-Install required dependencies:
+**Install required dependencies:**
 pip install -r requirements.txt
 
-Apply database migrations:
+**Apply database migrations:**
 python manage.py migrate
 
-Start the development server:
+**Start the development server:**
 python manage.py runserver
 
-Visit the local server in your browser:
+**Visit the local server in your browser:**
 http://127.0.0.1:8000/
 
-(Optional) Create a superuser for admin access:
-python manage.py createsuperuser
+
